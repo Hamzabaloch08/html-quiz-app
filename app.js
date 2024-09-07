@@ -147,6 +147,18 @@ let opt2 = document.getElementById('opt2')
 let opt3 = document.getElementById('opt3')
 let index = 0
 let enableButton = document.getElementById('btn')
+let score = 1
+let timer = document.getElementById('timer')
+let time = 6 
+
+let interval = setInterval(function(){
+    time--
+    timer.innerHTML = time
+    if(time == 0){
+        time = 6
+        nextQues()
+    }
+},1000)
 
 function nextQues() {
     let getOptions = document.getElementsByName('options')
@@ -154,20 +166,27 @@ function nextQues() {
         if (getOptions[i].checked) {
             let selectedValue = getOptions[i].value
             let selectedQuestion = htmlQuestions[index - 1]['question']
-            let selectedAnswer = htmlQuestions[index - 1][selectedValue]
+            let selectedAnswer = htmlQuestions[index - 1][`option${selectedValue}`]
+            let correctOption = htmlQuestions[index - 1][`correctOption`]
+            if (selectedAnswer == correctOption) {
+                score++
+            }
+            console.log(selectedAnswer)
         }
 
         getOptions[i].checked = false
     }
     enableButton.disabled = true
-    if (index >= htmlQuestions.length - 1) {
-        alert('Quiz Over')
+    if (index >= htmlQuestions.length) {
+        alert(`${(score / htmlQuestions.length) * 100}%`);
+        clearInterval(interval)
     } else {
         ques.innerText = htmlQuestions[index].question
         opt1.innerText = htmlQuestions[index].option1
         opt2.innerText = htmlQuestions[index].option2
         opt3.innerText = htmlQuestions[index].option3
         index++
+        time = 6
     }
 }
 
