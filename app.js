@@ -173,7 +173,6 @@ function nextQues() {
             }
             console.log(selectedAnswer)
         }
-
         getOptions[i].checked = false
     }
     enableButton.disabled = true
