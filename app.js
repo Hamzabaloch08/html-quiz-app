@@ -165,7 +165,6 @@ function nextQues() {
     for (let i = 0; i < getOptions.length; i++) {
         if (getOptions[i].checked) {
             let selectedValue = getOptions[i].value
-            let selectedQuestion = htmlQuestions[index - 1]['question']
             let selectedAnswer = htmlQuestions[index - 1][`option${selectedValue}`]
             let correctOption = htmlQuestions[index - 1][`correctOption`]
             if (selectedAnswer == correctOption) {
