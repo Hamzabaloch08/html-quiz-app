@@ -149,16 +149,23 @@ let index = 0
 let enableButton = document.getElementById('btn')
 let score = 1
 let timer = document.getElementById('timer')
-let time = 6 
+let time = 6
 
-let interval = setInterval(function(){
+let interval = setInterval(function () {
     time--
     timer.innerHTML = time
-    if(time == 0){
+    if (time == 0) {
         time = 6
-        nextQues()
+        let getOptions = document.getElementsByName('options')
+        for (let i = 0; i < getOptions.length; i++) {
+            if (getOptions[i].checked) {
+                getOptions[i].checked = false
+                nextQues()
+            }
+        }
     }
-},1000)
+
+}, 1000)
 
 function nextQues() {
     let getOptions = document.getElementsByName('options')
