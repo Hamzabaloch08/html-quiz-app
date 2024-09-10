@@ -1,22 +1,51 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-        <p id="timer"></p>
-        <p id="ques"></p>
-        <input onclick="clicked()" type="radio" name="options" id="" value="1">
-        <label for="" id="opt1"></label><br>
-        <input onclick="clicked()" type="radio" name="options" id="" value="2">
-        <label for="" id="opt2"></label><br>
-        <input onclick="clicked()" type="radio" name="options" id="" value="3">
-        <label for="" id="opt3"></label>
-        <br><br>
-        <button disabled onclick="nextQues()" id="btn">Next question</button>
+
+<div class="body">
+    <div class="container">
+
+        <div class="timer_box">
+            <p>0</p>
+            <p id="time"></p>
+        </div>
+
+        <div class="selection_box">
+
+            <div>
+                <p id="ques"></p>
+            </div>
+
+            <div>
+                <input onclick="clicked()" type="radio" name="options" id="" value="1">
+                <label for="opt1" id="opt1"></label>
+            </div>
+
+            <div>
+                <input onclick="clicked()" type="radio" name="options" id="" value="2">
+                <label for="opt2" id="opt2"></label>
+            </div>
+
+            <div>
+                <input onclick="clicked()" type="radio" name="options" id="" value="3">
+                <label for="opt3" id="opt3"></label>
+            </div>
+            <div>
+                <button disabled onclick="nextQues()" id="btn">Next question</button>
+            </div>
+        </div>
+        
     </div>
+</div>
+
     <script src="app.js"></script>
 </body>
+
 </html>
