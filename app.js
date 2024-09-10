@@ -147,22 +147,23 @@ let opt2 = document.getElementById('opt2')
 let opt3 = document.getElementById('opt3')
 let index = 0
 let enableButton = document.getElementById('btn')
-let score = 1
-let timer = document.getElementById('timer')
+let score = 0
+let timer = document.getElementById('time')
 let time = 6
 
 let interval = setInterval(function () {
+
     time--
-    timer.innerHTML = time
+    timer.innerText = time
     if (time == 0) {
         time = 6
         let getOptions = document.getElementsByName('options')
         for (let i = 0; i < getOptions.length; i++) {
             if (getOptions[i].checked) {
                 getOptions[i].checked = false
-                nextQues()
             }
         }
+        nextQues()
     }
 
 }, 1000)
