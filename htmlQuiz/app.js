@@ -106,7 +106,7 @@ let htmlQuestions = [
     },
     {
         question: 'What is the correct HTML for making a checkbox?',
-        option1: '<iput type="check">',
+        option1: '<input type="check">',
         option2: '<input type="checkbox">',
         option3: '<checkbox>',
         correctOption: '<input type="checkbox">'
