@@ -94,7 +94,7 @@ body {
     cursor: pointer;
     vertical-align: middle;
     background-color: hsl(0, 0%, 100%);
-    background-image: -webkit-radial-gradient(rgb(0, 0, 0) 8%, rgb(0, 0, 0) 20%, hsl(0, 0%, 14%) 0%, hsl(0, 0%, 100%) 60%);
+    background-image: -webkit-radial-gradient(rgb(255, 137, 47) 8%, rgb(255, 154, 77) 20%, hsl(32, 100%, 50%) 0%, hsl(0, 0%, 100%) 50%);
     background-repeat: no-repeat;
     transition: background-position .15s cubic-bezier(.8, 0, 1, 1);
     -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
