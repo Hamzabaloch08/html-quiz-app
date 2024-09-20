@@ -1,4 +1,4 @@
-let cssQuestions = [
+let css= [
     {
         question: 'What does CSS stand for?',
         option1: 'Colorful Style Sheet',
@@ -173,8 +173,8 @@ function nextQues() {
     for (let i = 0; i < getOptions.length; i++) {
         if (getOptions[i].checked) {
             let selectedValue = getOptions[i].value
-            let selectedAnswer = cssQuestions[index - 1][`option${selectedValue}`]
-            let correctOption = cssQuestions[index - 1][`correctOption`]
+            let selectedAnswer = css[index - 1][`option${selectedValue}`]
+            let correctOption = css[index - 1][`correctOption`]
             if (selectedAnswer == correctOption) {
                 score++
             }
@@ -183,14 +183,14 @@ function nextQues() {
         getOptions[i].checked = false
     }
     enableButton.disabled = true
-    if (index >= cssQuestions.length) {
-        alert(`${(score / cssQuestions.length) * 100}%`);
+    if (index >= css.length) {
+        alert(`${(score / css.length) * 100}%`);
         clearInterval(interval)
     } else {
-        ques.innerText = cssQuestions[index].question
-        opt1.innerText = cssQuestions[index].option1
-        opt2.innerText = cssQuestions[index].option2
-        opt3.innerText = cssQuestions[index].option3
+        ques.innerText = css[index].question
+        opt1.innerText = css[index].option1
+        opt2.innerText = css[index].option2
+        opt3.innerText = css[index].option3
         index++
         time = 6
     }
