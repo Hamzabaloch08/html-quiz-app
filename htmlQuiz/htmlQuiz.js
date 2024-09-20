@@ -1,4 +1,4 @@
-let htmlQuestions = [
+let html = [
     {
         question: 'What does HTML stand for?',
         option1: 'Hyperlinks and Text Markup Language',
@@ -173,8 +173,8 @@ function nextQues() {
     for (let i = 0; i < getOptions.length; i++) {
         if (getOptions[i].checked) {
             let selectedValue = getOptions[i].value
-            let selectedAnswer = htmlQuestions[index - 1][`option${selectedValue}`]
-            let correctOption = htmlQuestions[index - 1][`correctOption`]
+            let selectedAnswer = html[index - 1][`option${selectedValue}`]
+            let correctOption = html[index - 1][`correctOption`]
             if (selectedAnswer == correctOption) {
                 score++
             }
@@ -183,14 +183,14 @@ function nextQues() {
         getOptions[i].checked = false
     }
     enableButton.disabled = true
-    if (index >= htmlQuestions.length) {
-        alert(`${(score / htmlQuestions.length) * 100}%`);
+    if (index >= html.length) {
+        alert(`${(score / html.length) * 100}%`);
         clearInterval(interval)
     } else {
-        ques.innerText = htmlQuestions[index].question
-        opt1.innerText = htmlQuestions[index].option1
-        opt2.innerText = htmlQuestions[index].option2
-        opt3.innerText = htmlQuestions[index].option3
+        ques.innerText = html[index].question
+        opt1.innerText = html[index].option1
+        opt2.innerText = html[index].option2
+        opt3.innerText = html[index].option3
         index++
         time = 6
     }
