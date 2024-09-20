@@ -1,0 +1,28 @@
+.container {
+    background-color: rgb(255, 255, 5);
+    color: #000000;
+}
+
+.timer_box {
+    background-color: #000000;
+    color: rgb(255, 255, 5);
+}
+
+.timer_box:hover {
+    background-color:rgb(216, 213, 0);
+    color:  #000000 ;
+}
+
+.input {
+    background-color: hsl(0, 0%, 100%);
+    background-image: -webkit-radial-gradient(rgb(0, 0, 0) 8%, rgb(0, 0, 0) 20%, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 100%) 50%);
+}
+
+.button>button {
+    background-color: #000000;
+    color: rgb(255, 255, 5);
+}
+
+.button>button:enabled:hover {
+    background-color:rgb(30, 29, 29);
+    color: rgb(255, 255, 5);}
