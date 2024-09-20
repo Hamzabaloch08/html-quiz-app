@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./javaScriptQuiz.css">
+    <link rel="stylesheet" href="./javaScriptQuiz-mediaquery.css">
+    <link rel="stylesheet" href="../htmlQuiz/htmlQuiz.css">
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="container">
+
+            <div class="timer_box">
+                <p>0</p>
+                <p id="time"></p>
+            </div>
+
+            <div class="selection_box">
+
+                <div class="questions_box">
+                    <h2>Q:</h2>
+                    <h2 id="ques"></h2>
+                </div>
+
+                <div class="radio-input-label">
+                    <input class="input" onclick="clicked()" type="radio" name="options" id="redio1" value="1">
+                    <label for="redio1" id="opt1"></label>
+                </div>
+
+                <div class="radio-input-label">
+                    <input class="input" onclick="clicked()" type="radio" name="options" id="redio2" value="2">
+                    <label for="redio2" id="opt2"></label>
+                </div>
+
+                <div class="radio-input-label">
+                    <input class="input" onclick="clicked()" type="radio" name="options" id="redio3" value="3">
+                    <label for="redio3" id="opt3"></label>
+                </div>
+                <div class="button">
+                    <button disabled onclick="nextQues()" id="btn">Next question</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./javaScriptQuiz.js"></script>
+</body>
+
+</html>
