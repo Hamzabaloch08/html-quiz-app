@@ -4,7 +4,6 @@ let js = [
         option1: '<scprit>',
         option2: '<javascript>',
         option3: '<js>',
-        option4: '<scripting>',
         correctOption: '<script>'
     },
     {
@@ -23,8 +22,8 @@ let js = [
     },
     {
         question: 'The external JavaScript file must contain the <script> tag.',
-        option1: 'False',
-        option2: 'True',
+        option1: 'True',
+        option2: 'False',
         correctOption: 'False'
     },
     {
@@ -32,7 +31,6 @@ let js = [
         option1: 'msg("Hello World");',
         option2: 'alert("Hello World");',
         option3: 'alertBox("Hello World");',
-        option4: 'msgBox("Hello World");',
         correctOption: 'alert("Hello World");'
     },
     {
@@ -53,8 +51,7 @@ let js = [
         question: 'How to write an IF statement in JavaScript?',
         option1: 'if i = 5',
         option2: 'if(i == 5)',
-        option3: 'if i == 5 then',
-        option4: 'if i = 5 then',
+        option3: 'if i = 5 then',
         correctOption: 'if(i == 5)'
     },
     {
@@ -62,7 +59,6 @@ let js = [
         option1: 'if =! 5 then',
         option2: 'if(i != 5)',
         option3: 'if i <> 5',
-        option4: 'if(i <> 5)',
         correctOption: 'if(i != 5)'
     },
     {
@@ -90,17 +86,15 @@ let js = [
     {
         question: 'What is the correct way to write a JavaScript array?',
         option1: 'let colors = "red", "green", "blue"',
-        option2: 'let colors = (1:"red", 2:"green", 3:"blue")',
-        option3: 'let colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
-        option4: 'let colors = ["red", "green", "blue"]',
+        option2: 'let colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
+        option3: 'let colors = ["red", "green", "blue"]',
         correctOption: 'let colors = ["red", "green", "blue"]'
     },
     {
         question: 'How do you round the number 7.25, to the nearest integer?',
         option1: 'round(7.25)',
-        option2: 'rnd(7.25)',
-        option3: 'Math.rnd(7.25)',
-        option4: 'Math.round(7.25)',
+        option2: 'Math.rnd(7.25)',
+        option3: 'Math.round(7.25)',
         correctOption: 'Math.round(7.25)'
     },
     {
