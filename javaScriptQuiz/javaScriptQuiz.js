@@ -73,7 +73,6 @@ let js = [
         option1: 'for (i = 0; i <= 5; i++)',
         option2: 'for (i <= 5; i++)',
         option3: 'for i = 1 to 5',
-        option4: 'for (i = 0; i <= 5)',
         correctOption: 'for (i = 0; i <= 5; i++)'
     },
     {
@@ -100,9 +99,8 @@ let js = [
     {
         question: 'How do you find the number with the highest value of x and y?',
         option1: 'ceil(x, y)',
-        option2: 'top(x, y)',
-        option3: 'Math.ceil(x ,y)',
-        option4: 'Math.max(x, y)',
+        option2: 'Math.ceil(x ,y)',
+        option3: 'Math.max(x, y)',
         correctOption: 'Math.max(x, y)'
     },
     {
@@ -129,7 +127,6 @@ let js = [
         option1: 'onclick',
         option2: 'onmouseclick',
         option3: 'onchange',
-        option4: 'onmouseover',
         correctOption: 'onclick'
     },
     {
@@ -140,7 +137,6 @@ let js = [
         correctOption: 'let carName;'
     }
 ]
-
 
 let ques = document.getElementById('ques')
 let opt1 = document.getElementById('opt1')
